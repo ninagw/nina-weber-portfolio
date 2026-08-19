@@ -1,15 +1,12 @@
 const JOURNEY = [
+  { year: "since 2024", text: "Web Developer – E.ON Digital Technology" },
   { year: "2024", text: "HerHackathon — Beiersdorf project" },
-  { year: "2024", text: "neuefische GmbH — Web Development Bootcamp" },
-  { year: "2023", text: "App Brewery — Web Development Bootcamp" },
+  { year: "2024", text: "Web Development Bootcamp – neuefische GmbH" },
+  { year: "2023", text: "Web Development Bootcamp – App Brewery" },
   { year: "2022", text: "Master's thesis on NFTs & blockchain" },
   {
     year: "2021",
     text: "First interaction with code during my master\u2019s degree",
-  },
-  {
-    year: "since 2021",
-    text: "E-commerce & content marketing lead at Naturkosmetik Munich",
   },
   {
     year: "2018 — 2021",
@@ -20,7 +17,7 @@ const JOURNEY = [
 
 export function Journey() {
   return (
-    <section className="border-t border-border px-5 py-20 md:px-10 md:py-28">
+    <section id="journey" className="border-t border-border px-5 py-20 md:px-10 md:py-28">
       <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
         <h2 className="font-serif text-4xl italic text-accent-vermilion md:text-6xl">
           My Tech Journey

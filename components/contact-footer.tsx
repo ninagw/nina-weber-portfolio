@@ -53,8 +53,7 @@ export function ContactFooter() {
           Nina Weber
         </span>
         <span className="font-sans">
-          &copy; {new Date().getFullYear()} — Designed &amp; built with love &
-          AI
+          &copy; {new Date().getFullYear()} — Designed &amp; built with love and AI
         </span>
       </div>
     </footer>

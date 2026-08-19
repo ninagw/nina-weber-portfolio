@@ -16,9 +16,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Nina G.W. — Developer Portfolio",
+  title: "Nina Weber — Developer Portfolio",
   description:
-    "Portfolio of Nina G.W., a self-taught web developer working toward a future in Web3 and blockchain. Selected projects, tech stack, and journey.",
+    "Portfolio of Nina G.W., a web developer and ux designer. Selected projects, tech stack, and journey.",
   generator: "v0.app",
   icons: {
     icon: [

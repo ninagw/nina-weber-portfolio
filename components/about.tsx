@@ -14,7 +14,8 @@ export function About() {
           <p className="mt-8 max-w-xl font-sans text-base leading-relaxed text-ink/80 md:text-lg">
             Since then I&apos;ve taught myself to program through bootcamps,
             Udemy and a lot of YouTube. I moved from marketing and publishing
-            into building things for the web, and I&apos;m now working toward a
+            into building for the web. Now working as a web developer &amp;
+            UX designer at an energy company in Munich/ Germany – looking forward to a
             future in Web3 and blockchain development.
           </p>
         </div>
@@ -31,7 +32,8 @@ export function About() {
             Nina Weber
           </p>
           <p className="mt-3 font-serif text-3xl italic text-accent-vermilion md:text-4xl">
-            Web Developer, UX Designer &amp; Aspiring Blockchain Dev
+            Web Developer with a love for design & storytelling
+            {/*&amp; Aspiring Blockchain Dev*/}
           </p>
         </div>
       </div>

@@ -19,7 +19,7 @@ const PROJECTS: Project[] = [
     image: "/images/proj-pets.png",
     description:
       "A cozy virtual-pet gaming app — care for your pets, play minigames and shop for treats, with weather, seasons and music. A four-week group project from my Web Development Bootcamp.",
-    tags: ["React.js", "Next.js", "styled-components"],
+    tags: ["React.js", "Next.js", "styled-components", "MongoDB", "Mongoose", "Vercel"],
     repoURL: "https://github.com/ninagw/pocket-pets",
     liveURL: "https://pocket-pets-kappa.vercel.app/",
   },
@@ -52,7 +52,7 @@ const PROJECTS: Project[] = [
     image: "/images/proj-event.png",
     description:
       "My final journalism-school project: a mobile-first site to sell tickets, grow a newsletter and surface event details for online marketing traffic.",
-    tags: ["WordPress", "Marketing"],
+    tags: ["WordPress", "Marketing", "Business Analysis", "Communication", "Design Thinking"],
     repoURL: "",
     liveURL: "",
   },
@@ -63,7 +63,7 @@ const PROJECTS: Project[] = [
     image: "/images/proj-web.png",
     description:
       "Years of building websites and blogs on WordPress and Squarespace — from a travel blog to an affiliate interior blog — always valuing aesthetics, navigation and UX.",
-    tags: ["WordPress", "Squarespace"],
+    tags: ["WordPress", "Squarespace", "UX Design", "Content Management"],
     repoURL: "",
     liveURL: "",
   },
@@ -140,7 +140,7 @@ function ProjectRow({ project, flip }: { project: Project; flip: boolean }) {
 export function Projects() {
   return (
     <section
-      id="work"
+      id="projects"
       className="border-t border-border px-5 py-20 md:px-10 md:py-28"
     >
       <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
@@ -148,7 +148,7 @@ export function Projects() {
           Selected Work
         </h2>
         <span className="font-sans text-sm uppercase tracking-[0.15em] text-ink/60">
-          Five projects
+          My projects
         </span>
       </div>
 

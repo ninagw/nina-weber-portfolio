@@ -12,11 +12,18 @@ export function SiteNav() {
           <a href="#about" className="transition-opacity hover:opacity-60">
             About
           </a>
+          <a href="#techstack" className="transition-opacity hover:opacity-60">
+            Tech Stack
+          </a>
           <a
-            href="#work"
+            href="#projects"
             className="whitespace-nowrap transition-opacity hover:opacity-60"
           >
-            <span className="hidden md:inline">Selected </span>Work
+            Selected Work
+            {/*<span className="hidden md:inline">Selected </span>Work*/}
+          </a>
+          <a href="#journey" className="transition-opacity hover:opacity-60">
+            My Journey
           </a>
           <a href="#contact" className="transition-opacity hover:opacity-60">
             Contact

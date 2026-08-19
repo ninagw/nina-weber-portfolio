@@ -15,7 +15,7 @@ const STACK = [
 
 export function TechStack() {
   return (
-    <section className="border-t border-border bg-accent-vermilion px-5 py-20 text-accent-foreground md:px-10 md:py-28">
+    <section id="techstack" className="border-t border-border bg-accent-vermilion px-5 py-20 text-accent-foreground md:px-10 md:py-28">
       <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
         <h2 className="font-sans text-sm font-bold uppercase tracking-[0.15em]">
           Tech Stack

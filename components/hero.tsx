@@ -18,8 +18,8 @@ export function Hero() {
       {/* Massive display headline */}
       <div className="relative z-10 mt-6 md:mt-10">
         <h1 className="display-serif text-accent-vermilion">
-          <span className="block text-[clamp(2.75rem,13vw,15rem)]">DEVELOPER</span>
-          <span className="block text-[clamp(2.75rem,13vw,15rem)]">PORTFOLIO</span>
+          <span className="block bg-transparent text-[clamp(2.75rem,13vw,15rem)]">DEVELOPER</span>
+          <span className="block bg-transparent text-[clamp(2.75rem,13vw,15rem)]">PORTFOLIO</span>
         </h1>
       </div>
 

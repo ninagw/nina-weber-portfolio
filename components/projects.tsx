@@ -5,6 +5,8 @@ type Project = {
   image: string
   description: string
   tags: string[]
+  githubUrl: string
+  projectUrl: string
 }
 
 const PROJECTS: Project[] = [
@@ -16,6 +18,8 @@ const PROJECTS: Project[] = [
     description:
       'A cozy virtual-pet gaming app — care for your pets, play minigames and shop for treats, with weather, seasons and music. A four-week group project from my Web Development Bootcamp.',
     tags: ['React.js', 'Next.js', 'styled-components'],
+    githubUrl: 'https://github.com/ninagw/pocket-pets',
+    projectUrl: 'https://pocket-pets.example.com',
   },
   {
     index: '02',
@@ -25,6 +29,8 @@ const PROJECTS: Project[] = [
     description:
       'One of my first projects: answer, create and mark your own quiz questions. Built from scratch to learn the fundamentals.',
     tags: ['JavaScript', 'HTML', 'CSS'],
+    githubUrl: 'https://github.com/ninagw/quiz-app',
+    projectUrl: 'https://quiz-app.example.com',
   },
   {
     index: '03',
@@ -34,6 +40,8 @@ const PROJECTS: Project[] = [
     description:
       'A fully functional calculator with a modern, animated design. My playground for CSS animations and more complex JavaScript logic.',
     tags: ['JavaScript', 'HTML', 'CSS', 'Vercel'],
+    githubUrl: 'https://github.com/ninagw/calculator',
+    projectUrl: 'https://calculator.example.com',
   },
   {
     index: '04',
@@ -43,6 +51,8 @@ const PROJECTS: Project[] = [
     description:
       'My final journalism-school project: a mobile-first site to sell tickets, grow a newsletter and surface event details for online marketing traffic.',
     tags: ['WordPress', 'Marketing'],
+    githubUrl: 'https://github.com/ninagw/event-website',
+    projectUrl: 'https://event-website.example.com',
   },
   {
     index: '05',
@@ -52,6 +62,8 @@ const PROJECTS: Project[] = [
     description:
       'Years of building websites and blogs on WordPress and Squarespace — from a travel blog to an affiliate interior blog — always valuing aesthetics, navigation and UX.',
     tags: ['WordPress', 'Squarespace'],
+    githubUrl: 'https://github.com/ninagw/cms-websites',
+    projectUrl: 'https://cms-websites.example.com',
   },
 ]
 
@@ -93,6 +105,24 @@ function ProjectRow({ project, flip }: { project: Project; flip: boolean }) {
             </li>
           ))}
         </ul>
+        <div className="mt-7 flex flex-wrap gap-3">
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-ink px-4 py-2 font-sans text-xs font-bold uppercase tracking-[0.12em] text-background transition-colors hover:bg-accent-vermilion"
+          >
+            GitHub
+          </a>
+          <a
+            href={project.projectUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="border border-ink px-4 py-2 font-sans text-xs font-bold uppercase tracking-[0.12em] text-ink transition-colors hover:bg-accent-vermilion hover:text-accent-foreground"
+          >
+            Live Project
+          </a>
+        </div>
       </div>
     </article>
   )

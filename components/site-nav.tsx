@@ -6,11 +6,11 @@ export function SiteNav() {
           href="#top"
           className="font-sans text-sm font-bold uppercase tracking-[0.12em] text-accent-vermilion md:text-base"
         >
-          Nina G.W.
+          Nina Weber
         </a>
         <div className="flex items-center gap-4 font-serif text-base text-ink md:gap-9 md:text-2xl">
           <a href="#about" className="transition-opacity hover:opacity-60">
-            Info
+            About
           </a>
           <a href="#work" className="whitespace-nowrap transition-opacity hover:opacity-60">
             <span className="hidden md:inline">Selected </span>Work

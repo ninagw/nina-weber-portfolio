@@ -1,3 +1,5 @@
+import {buttonVariants} from "@/components/ui/button";
+
 type Project = {
   index: string
   title: string
@@ -5,6 +7,8 @@ type Project = {
   image: string
   description: string
   tags: string[]
+  repoURL: string
+  liveURL: string
 }
 
 const PROJECTS: Project[] = [
@@ -16,6 +20,8 @@ const PROJECTS: Project[] = [
     description:
       'A cozy virtual-pet gaming app — care for your pets, play minigames and shop for treats, with weather, seasons and music. A four-week group project from my Web Development Bootcamp.',
     tags: ['React.js', 'Next.js', 'styled-components'],
+    repoURL: 'https://github.com/ninagw/pocket-pets',
+    liveURL: 'https://pocket-pets-kappa.vercel.app/',
   },
   {
     index: '02',
@@ -25,6 +31,8 @@ const PROJECTS: Project[] = [
     description:
       'One of my first projects: answer, create and mark your own quiz questions. Built from scratch to learn the fundamentals.',
     tags: ['JavaScript', 'HTML', 'CSS'],
+    repoURL: 'https://github.com/ninagw/quiz-app',
+    liveURL: 'https://ninagw.github.io/quiz-app/',
   },
   {
     index: '03',
@@ -34,6 +42,8 @@ const PROJECTS: Project[] = [
     description:
       'A fully functional calculator with a modern, animated design. My playground for CSS animations and more complex JavaScript logic.',
     tags: ['JavaScript', 'HTML', 'CSS', 'Vercel'],
+    repoURL: 'https://github.com/ninagw/calculator',
+    liveURL: 'https://webapp-calculator.vercel.app/',
   },
   {
     index: '04',
@@ -43,6 +53,8 @@ const PROJECTS: Project[] = [
     description:
       'My final journalism-school project: a mobile-first site to sell tickets, grow a newsletter and surface event details for online marketing traffic.',
     tags: ['WordPress', 'Marketing'],
+    repoURL: 'https://github.com/ninagw/event-website',
+    liveURL: 'https://your-live-url.com/event-website',
   },
   {
     index: '05',
@@ -52,6 +64,8 @@ const PROJECTS: Project[] = [
     description:
       'Years of building websites and blogs on WordPress and Squarespace — from a travel blog to an affiliate interior blog — always valuing aesthetics, navigation and UX.',
     tags: ['WordPress', 'Squarespace'],
+    repoURL: 'https://github.com/ninagw/cms-websites-blogs',
+    liveURL: 'https://your-live-url.com/cms-websites-blogs',
   },
 ]
 
@@ -93,6 +107,24 @@ function ProjectRow({ project, flip }: { project: Project; flip: boolean }) {
             </li>
           ))}
         </ul>
+        <div className="flex mt-6 gap-2">
+        <a
+          href={project.repoURL}
+          target="_blank"
+          rel="noreferrer"
+          className={buttonVariants({ size: 'lg' })}
+        >
+          To GitHub Repository
+        </a>
+        <a
+          href={project.liveURL}
+          target="_blank"
+          rel="noreferrer"
+          className={buttonVariants({ size: 'lg' })}
+        >
+          View Project
+        </a>
+        </div>
       </div>
     </article>
   )

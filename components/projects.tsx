@@ -110,7 +110,7 @@ function ProjectRow({ project, flip }: { project: Project; flip: boolean }) {
             href={project.githubUrl}
             target="_blank"
             rel="noreferrer"
-            className="bg-accent-vermilion px-4 py-2 font-sans text-xs font-bold uppercase tracking-[0.12em] text-accent-foreground transition-colors hover:opacity-85"
+            className="bg-ink px-4 py-2 font-sans text-xs font-bold uppercase tracking-[0.12em] text-background transition-colors hover:bg-accent-vermilion"
           >
             GitHub
           </a>
@@ -118,7 +118,7 @@ function ProjectRow({ project, flip }: { project: Project; flip: boolean }) {
             href={project.projectUrl}
             target="_blank"
             rel="noreferrer"
-            className="bg-accent-vermilion px-4 py-2 font-sans text-xs font-bold uppercase tracking-[0.12em] text-accent-foreground transition-colors hover:opacity-85"
+            className="border border-ink px-4 py-2 font-sans text-xs font-bold uppercase tracking-[0.12em] text-ink transition-colors hover:bg-accent-vermilion hover:text-accent-foreground"
           >
             Live Project
           </a>

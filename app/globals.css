@@ -1,6 +1,6 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
-@import 'shadcn/tailwind.css';
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -51,6 +51,8 @@
 
 :root {
   color-scheme: light;
+  --font-inter: "Inter";
+  --font-fraunces: "Fraunces";
   /* Warm light-gray canvas + vivid vermilion accent (Quinn Fluid editorial) */
   --background: oklch(0.945 0.006 80);
   --foreground: oklch(0.22 0.01 60);
@@ -138,7 +140,7 @@
 
 @layer utilities {
   .display-serif {
-    font-family: var(--font-serif);
+    font-family: var(--font-serif, ui-serif, Georgia, serif);
     font-optical-sizing: auto;
     line-height: 0.9;
     letter-spacing: -0.02em;

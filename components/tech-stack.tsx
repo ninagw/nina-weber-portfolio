@@ -1,17 +1,17 @@
 const STACK = [
-  'JavaScript',
-  'React.js',
-  'Next.js',
-  'HTML',
-  'CSS',
-  'styled-components',
-  'Shell',
-  'MongoDB',
-  'Mongoose',
-  'Git',
-  'GitHub',
-  'VS Code',
-]
+  "JavaScript",
+  "React.js",
+  "Next.js",
+  "HTML",
+  "CSS",
+  "styled-components",
+  "Shell",
+  "MongoDB",
+  "Mongoose",
+  "Git",
+  "GitHub",
+  "VS Code",
+];
 
 export function TechStack() {
   return (
@@ -36,5 +36,5 @@ export function TechStack() {
         ))}
       </ul>
     </section>
-  )
+  );
 }

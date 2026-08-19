@@ -1,88 +1,91 @@
-import {buttonVariants} from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 
 type Project = {
-  index: string
-  title: string
-  year: string
-  image: string
-  description: string
-  tags: string[]
-  repoURL: string
-  liveURL: string
-}
+  index: string;
+  title: string;
+  year: string;
+  image: string;
+  description: string;
+  tags: string[];
+  repoURL: string;
+  liveURL: string;
+};
 
 const PROJECTS: Project[] = [
   {
-    index: '01',
-    title: 'Pocket Pets',
-    year: '2024',
-    image: '/images/proj-pets.png',
+    index: "01",
+    title: "Pocket Pets",
+    year: "2024",
+    image: "/images/proj-pets.png",
     description:
-      'A cozy virtual-pet gaming app — care for your pets, play minigames and shop for treats, with weather, seasons and music. A four-week group project from my Web Development Bootcamp.',
-    tags: ['React.js', 'Next.js', 'styled-components'],
-    repoURL: 'https://github.com/ninagw/pocket-pets',
-    liveURL: 'https://pocket-pets-kappa.vercel.app/',
+      "A cozy virtual-pet gaming app — care for your pets, play minigames and shop for treats, with weather, seasons and music. A four-week group project from my Web Development Bootcamp.",
+    tags: ["React.js", "Next.js", "styled-components"],
+    repoURL: "https://github.com/ninagw/pocket-pets",
+    liveURL: "https://pocket-pets-kappa.vercel.app/",
   },
   {
-    index: '02',
-    title: 'Quiz App',
-    year: '2023',
-    image: '/images/proj-quiz.png',
+    index: "02",
+    title: "Quiz App",
+    year: "2023",
+    image: "/images/proj-quiz.png",
     description:
-      'One of my first projects: answer, create and mark your own quiz questions. Built from scratch to learn the fundamentals.',
-    tags: ['JavaScript', 'HTML', 'CSS'],
-    repoURL: 'https://github.com/ninagw/quiz-app',
-    liveURL: 'https://ninagw.github.io/quiz-app/',
+      "One of my first projects: answer, create and mark your own quiz questions. Built from scratch to learn the fundamentals.",
+    tags: ["JavaScript", "HTML", "CSS"],
+    repoURL: "https://github.com/ninagw/quiz-app",
+    liveURL: "https://ninagw.github.io/quiz-app/",
   },
   {
-    index: '03',
-    title: 'Calculator',
-    year: '2023',
-    image: '/images/proj-calc.png',
+    index: "03",
+    title: "Calculator",
+    year: "2023",
+    image: "/images/proj-calc.png",
     description:
-      'A fully functional calculator with a modern, animated design. My playground for CSS animations and more complex JavaScript logic.',
-    tags: ['JavaScript', 'HTML', 'CSS', 'Vercel'],
-    repoURL: 'https://github.com/ninagw/calculator',
-    liveURL: 'https://webapp-calculator.vercel.app/',
+      "A fully functional calculator with a modern, animated design. My playground for CSS animations and more complex JavaScript logic.",
+    tags: ["JavaScript", "HTML", "CSS", "Vercel"],
+    repoURL: "https://github.com/ninagw/calculator",
+    liveURL: "https://webapp-calculator.vercel.app/",
   },
   {
-    index: '04',
-    title: 'Event Website',
-    year: '2021',
-    image: '/images/proj-event.png',
+    index: "04",
+    title: "Event Website",
+    year: "2021",
+    image: "/images/proj-event.png",
     description:
-      'My final journalism-school project: a mobile-first site to sell tickets, grow a newsletter and surface event details for online marketing traffic.',
-    tags: ['WordPress', 'Marketing'],
-    repoURL: 'https://github.com/ninagw/event-website',
-    liveURL: 'https://your-live-url.com/event-website',
+      "My final journalism-school project: a mobile-first site to sell tickets, grow a newsletter and surface event details for online marketing traffic.",
+    tags: ["WordPress", "Marketing"],
+    repoURL: "",
+    liveURL: "",
   },
   {
-    index: '05',
-    title: 'CMS Websites & Blogs',
-    year: '2014 — 2018',
-    image: '/images/proj-web.png',
+    index: "05",
+    title: "CMS Websites & Blogs",
+    year: "2014 — 2018",
+    image: "/images/proj-web.png",
     description:
-      'Years of building websites and blogs on WordPress and Squarespace — from a travel blog to an affiliate interior blog — always valuing aesthetics, navigation and UX.',
-    tags: ['WordPress', 'Squarespace'],
-    repoURL: 'https://github.com/ninagw/cms-websites-blogs',
-    liveURL: 'https://your-live-url.com/cms-websites-blogs',
+      "Years of building websites and blogs on WordPress and Squarespace — from a travel blog to an affiliate interior blog — always valuing aesthetics, navigation and UX.",
+    tags: ["WordPress", "Squarespace"],
+    repoURL: "",
+    liveURL: "",
   },
-]
+];
 
 function ProjectRow({ project, flip }: { project: Project; flip: boolean }) {
+  const repoURL = !!project.repoURL;
+  const liveURL = !!project.liveURL;
+
   return (
     <article className="group grid items-center gap-6 md:grid-cols-12 md:gap-8">
-      <div className={flip ? 'md:order-2 md:col-span-7' : 'md:col-span-7'}>
+      <div className={flip ? "md:order-2 md:col-span-7" : "md:col-span-7"}>
         <div className="overflow-hidden">
           <img
-            src={project.image || '/placeholder.svg'}
+            src={project.image || "/placeholder.svg"}
             alt={`${project.title} project, editorial film style`}
             className="h-auto w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
           />
         </div>
       </div>
 
-      <div className={flip ? 'md:order-1 md:col-span-5' : 'md:col-span-5'}>
+      <div className={flip ? "md:order-1 md:col-span-5" : "md:col-span-5"}>
         <div className="flex items-baseline gap-4">
           <span className="font-sans text-sm font-bold tracking-[0.1em] text-ink/50">
             {project.index}
@@ -108,31 +111,38 @@ function ProjectRow({ project, flip }: { project: Project; flip: boolean }) {
           ))}
         </ul>
         <div className="flex mt-6 gap-2">
-        <a
-          href={project.repoURL}
-          target="_blank"
-          rel="noreferrer"
-          className={buttonVariants({ size: 'lg' })}
-        >
-          To GitHub Repository
-        </a>
-        <a
-          href={project.liveURL}
-          target="_blank"
-          rel="noreferrer"
-          className={buttonVariants({ size: 'lg' })}
-        >
-          View Project
-        </a>
+          {repoURL && (
+            <a
+              href={project.repoURL}
+              target="_blank"
+              rel="noreferrer"
+              className={buttonVariants({ size: "lg" })}
+            >
+              To GitHub Repository
+            </a>
+          )}
+          {liveURL && (
+            <a
+              href={project.liveURL}
+              target="_blank"
+              rel="noreferrer"
+              className={buttonVariants({ size: "lg" })}
+            >
+              View Project
+            </a>
+          )}
         </div>
       </div>
     </article>
-  )
+  );
 }
 
 export function Projects() {
   return (
-    <section id="work" className="border-t border-border px-5 py-20 md:px-10 md:py-28">
+    <section
+      id="work"
+      className="border-t border-border px-5 py-20 md:px-10 md:py-28"
+    >
       <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
         <h2 className="font-serif text-4xl italic text-accent-vermilion underline decoration-1 underline-offset-8 md:text-6xl">
           Selected Work
@@ -144,9 +154,13 @@ export function Projects() {
 
       <div className="mt-16 flex flex-col gap-20 md:mt-24 md:gap-32">
         {PROJECTS.map((project, i) => (
-          <ProjectRow key={project.title} project={project} flip={i % 2 === 1} />
+          <ProjectRow
+            key={project.title}
+            project={project}
+            flip={i % 2 === 1}
+          />
         ))}
       </div>
     </section>
-  )
+  );
 }

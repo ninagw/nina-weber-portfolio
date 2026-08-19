@@ -30,10 +30,10 @@ export function ContactFooter() {
             Elsewhere
           </p>
           <a
-              href="https://github.com/ninagw"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-2 block font-serif text-2xl italic transition-opacity hover:opacity-70 md:text-3xl"
+            href="https://github.com/ninagw"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-2 block font-serif text-2xl italic transition-opacity hover:opacity-70 md:text-3xl"
           >
             GitHub
           </a>
@@ -53,9 +53,10 @@ export function ContactFooter() {
           Nina Weber
         </span>
         <span className="font-sans">
-          &copy; {new Date().getFullYear()} — Designed &amp; built with love & AI
+          &copy; {new Date().getFullYear()} — Designed &amp; built with love &
+          AI
         </span>
       </div>
     </footer>
-  )
+  );
 }

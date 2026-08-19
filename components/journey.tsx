@@ -1,19 +1,22 @@
 const JOURNEY = [
-  { year: '2024', text: 'HerHackathon — Beiersdorf project' },
-  { year: '2024', text: 'neuefische GmbH — Web Development Bootcamp' },
-  { year: '2023', text: 'App Brewery — Web Development Bootcamp' },
-  { year: '2022', text: "Master's thesis on NFTs & blockchain" },
-  { year: '2021', text: 'First interaction with code during my master\u2019s degree' },
+  { year: "2024", text: "HerHackathon — Beiersdorf project" },
+  { year: "2024", text: "neuefische GmbH — Web Development Bootcamp" },
+  { year: "2023", text: "App Brewery — Web Development Bootcamp" },
+  { year: "2022", text: "Master's thesis on NFTs & blockchain" },
   {
-    year: 'since 2021',
-    text: 'E-commerce & content marketing lead at Naturkosmetik Munich',
+    year: "2021",
+    text: "First interaction with code during my master\u2019s degree",
   },
   {
-    year: '2018 — 2021',
-    text: 'Building websites and working with various CMS in publishing',
+    year: "since 2021",
+    text: "E-commerce & content marketing lead at Naturkosmetik Munich",
   },
-  { year: 'before 2018', text: 'WordPress blogs and websites, just for fun' },
-]
+  {
+    year: "2018 — 2021",
+    text: "Building websites and working with various CMS in publishing",
+  },
+  { year: "before 2018", text: "WordPress blogs and websites, just for fun" },
+];
 
 export function Journey() {
   return (
@@ -43,5 +46,5 @@ export function Journey() {
         ))}
       </ol>
     </section>
-  )
+  );
 }

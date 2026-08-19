@@ -12,7 +12,10 @@ export function SiteNav() {
           <a href="#about" className="transition-opacity hover:opacity-60">
             About
           </a>
-          <a href="#work" className="whitespace-nowrap transition-opacity hover:opacity-60">
+          <a
+            href="#work"
+            className="whitespace-nowrap transition-opacity hover:opacity-60"
+          >
             <span className="hidden md:inline">Selected </span>Work
           </a>
           <a href="#contact" className="transition-opacity hover:opacity-60">
@@ -21,5 +24,5 @@ export function SiteNav() {
         </div>
       </nav>
     </header>
-  )
+  );
 }

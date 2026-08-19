@@ -25,7 +25,7 @@ export function About() {
             />
           </div>
           <p className="mt-6 font-sans text-sm font-bold uppercase tracking-[0.12em] text-accent-vermilion">
-            Nina G.W.
+            Nina W.
           </p>
           <p className="mt-3 font-serif text-3xl italic text-accent-vermilion md:text-4xl">
             Web Developer &amp; Aspiring Blockchain Dev

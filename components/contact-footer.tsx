@@ -15,13 +15,13 @@ export function ContactFooter() {
       <div className="mt-12 grid gap-10 border-t border-accent-foreground/25 pt-10 md:grid-cols-3">
         <div>
           <p className="font-sans text-xs uppercase tracking-[0.15em] opacity-70">
-            Email
+            LinkedIn
           </p>
           <a
-            href="mailto:hello@ninagw.dev"
+            href="https://www.linkedin.com/in/nina-weber-54253b16a/"
             className="mt-2 block font-serif text-2xl italic transition-opacity hover:opacity-70 md:text-3xl"
           >
-            hello@ninagw.dev
+            Nina Weber
           </a>
         </div>
         <div>
@@ -37,16 +37,6 @@ export function ContactFooter() {
                 className="transition-opacity hover:opacity-70"
               >
                 GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://ninagw.github.io/my-personal-website"
-                target="_blank"
-                rel="noreferrer"
-                className="transition-opacity hover:opacity-70"
-              >
-                Current Site
               </a>
             </li>
           </ul>

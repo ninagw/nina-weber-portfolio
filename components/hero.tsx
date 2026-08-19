@@ -3,7 +3,7 @@ export function Hero() {
     <section id="top" className="relative min-h-screen overflow-hidden px-5 md:px-10">
       {/* Email tagline */}
       <p className="pt-24 font-serif text-xl italic text-accent-vermilion md:pt-28 md:text-3xl">
-        hello@ninagw.dev
+        Nina Weber
       </p>
 
       {/* Overlapping editorial image */}

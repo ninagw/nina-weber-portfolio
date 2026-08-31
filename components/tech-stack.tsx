@@ -15,7 +15,7 @@ const STACK = [
 
 export function TechStack() {
   return (
-    <section id="techstack" className="border-t border-border bg-accent-vermilion px-5 py-20 text-accent-foreground md:px-10 md:py-28">
+    <section id="techstack" className="border-t border-border bg-accent-vermilion px-5 py-14 text-accent-foreground md:px-10 md:py-28">
       <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
         <h2 className="font-sans text-sm font-bold uppercase tracking-[0.15em]">
           Tech Stack
@@ -25,7 +25,7 @@ export function TechStack() {
         </span>
       </div>
 
-      <ul className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-2 md:mt-14">
+      <ul className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-2 md:mt-14 md:gap-x-8">
         {STACK.map((item) => (
           <li
             key={item}

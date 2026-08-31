@@ -87,7 +87,7 @@ function ProjectRow({ project, flip }: { project: Project; flip: boolean }) {
 
       <div className={flip ? "md:order-1 md:col-span-5" : "md:col-span-5"}>
         <div className="flex items-baseline gap-4">
-          <span className="font-sans text-sm font-bold tracking-[0.1em] text-ink/50">
+          <span className="font-sans text-sm font-bold tracking-widest text-ink/50">
             {project.index}
           </span>
           <span className="font-sans text-sm uppercase tracking-[0.12em] text-ink/50">
@@ -104,13 +104,13 @@ function ProjectRow({ project, flip }: { project: Project; flip: boolean }) {
           {project.tags.map((tag) => (
             <li
               key={tag}
-              className="border border-ink/25 px-3 py-1 font-sans text-xs uppercase tracking-[0.1em] text-ink/70"
+              className="border border-ink/25 px-3 py-1 font-sans text-xs uppercase tracking-widest text-ink/70"
             >
               {tag}
             </li>
           ))}
         </ul>
-        <div className="flex mt-6 gap-2">
+        <div className="flex mt-6 flex-wrap gap-2">
           {repoURL && (
             <a
               href={project.repoURL}
@@ -141,7 +141,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="border-t border-border px-5 py-20 md:px-10 md:py-28"
+      className="border-t border-border px-5 py-14 md:px-10 md:py-28"
     >
       <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
         <h2 className="font-serif text-4xl italic text-accent-vermilion underline decoration-1 underline-offset-8 md:text-6xl">

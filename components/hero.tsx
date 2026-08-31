@@ -2,14 +2,14 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-screen overflow-hidden px-5 md:px-10"
+      className="relative overflow-hidden px-5 pb-12 md:min-h-screen md:px-10 md:pb-0"
     >
       <p className="pt-24 font-serif text-xl italic text-accent-vermilion md:pt-28 md:text-3xl">
         Hi, I am Nina. Welcome to my
       </p>
 
-      {/* Overlapping editorial image */}
-      <div className="pointer-events-none absolute right-0 top-[26%] z-0 w-[58%] max-w-[640px] md:top-[22%] md:w-[42%]">
+      {/* Editorial image — in flow on mobile, overlapping on desktop */}
+      <div className="pointer-events-none relative z-0 ml-auto mt-6 w-[70%] max-w-160 md:absolute md:right-0 md:top-[22%] md:mt-0 md:w-[42%]">
         <img
           src="/images/hero.png"
           alt="Nina working at her desk, shot in an editorial film style"
@@ -29,15 +29,15 @@ export function Hero() {
         </h1>
       </div>
 
-      {/* Bottom meta row */}
-      <div className="absolute inset-x-5 bottom-8 z-10 flex flex-col gap-4 md:inset-x-10 md:flex-row md:items-end md:justify-between">
+      {/* Meta row — in flow on mobile, pinned to bottom on desktop */}
+      <div className="relative z-10 mt-8 flex flex-col gap-4 md:absolute md:inset-x-10 md:bottom-8 md:mt-0 md:flex-row md:items-end md:justify-between">
         <p className="max-w-md font-sans text-base leading-relaxed text-ink md:text-lg">
           Self-taught web developer building for the browser today and the
           blockchain tomorrow.
         </p>
-        <p className="font-sans text-sm uppercase tracking-[0.15em] text-ink/60">
+       {/* <p className="font-sans text-sm uppercase tracking-[0.15em] text-ink/60">
           Munich, DE — Est. 2021
-        </p>
+        </p>*/}
       </div>
     </section>
   );

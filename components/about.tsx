@@ -2,9 +2,26 @@ export function About() {
   return (
     <section
       id="about"
-      className="border-t border-border px-5 py-20 md:px-10 md:py-28"
+      className="border-border px-5 py-14 md:px-10 md:py-28"
     >
       <div className="grid gap-12 md:grid-cols-2 md:gap-16">
+        <div className="order-1 md:order-2">
+          <div className="overflow-hidden">
+            <img
+                src="/images/about.png"
+                alt="Close-up of hands typing on a laptop in an editorial film style"
+                className="h-auto w-full object-cover"
+            />
+          </div>
+          <p className="mt-6 font-sans text-sm font-bold uppercase tracking-[0.12em] text-accent-vermilion">
+            Nina Weber
+          </p>
+          <p className="mt-3 font-serif text-3xl italic text-accent-vermilion md:text-4xl">
+            Web Developer with a love for design & storytelling
+            {/*&amp; Aspiring Blockchain Dev*/}
+          </p>
+        </div>
+
         <div className="order-2 md:order-1">
           <p className="font-serif text-2xl leading-tight text-ink md:text-4xl">
             {
@@ -17,23 +34,6 @@ export function About() {
             into building for the web. Now working as a web developer &amp;
             UX designer at an energy company in Munich/ Germany – looking forward to a
             future in Web3 and blockchain development.
-          </p>
-        </div>
-
-        <div className="order-1 md:order-2">
-          <div className="overflow-hidden">
-            <img
-              src="/images/about.png"
-              alt="Close-up of hands typing on a laptop in an editorial film style"
-              className="h-auto w-full object-cover"
-            />
-          </div>
-          <p className="mt-6 font-sans text-sm font-bold uppercase tracking-[0.12em] text-accent-vermilion">
-            Nina Weber
-          </p>
-          <p className="mt-3 font-serif text-3xl italic text-accent-vermilion md:text-4xl">
-            Web Developer with a love for design & storytelling
-            {/*&amp; Aspiring Blockchain Dev*/}
           </p>
         </div>
       </div>

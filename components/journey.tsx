@@ -17,7 +17,7 @@ const JOURNEY = [
 
 export function Journey() {
   return (
-    <section id="journey" className="border-t border-border px-5 py-20 md:px-10 md:py-28">
+    <section id="journey" className="border-t border-border px-5 py-14 md:px-10 md:py-28">
       <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
         <h2 className="font-serif text-4xl italic text-accent-vermilion md:text-6xl">
           My Tech Journey

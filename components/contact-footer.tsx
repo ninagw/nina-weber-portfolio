@@ -2,7 +2,7 @@ export function ContactFooter() {
   return (
     <footer
       id="contact"
-      className="bg-accent-vermilion px-5 py-20 text-accent-foreground md:px-10 md:py-28"
+      className="bg-accent-vermilion px-5 py-14 text-accent-foreground md:px-10 md:py-28"
     >
       <p className="font-sans text-sm font-bold uppercase tracking-[0.15em] opacity-80">
         Contact

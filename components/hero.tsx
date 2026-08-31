@@ -11,7 +11,7 @@ export function Hero() {
       {/* Editorial image — in flow on mobile, overlapping on desktop */}
       <div className="pointer-events-none relative z-0 ml-auto mt-6 w-[70%] max-w-160 md:absolute md:right-0 md:top-[22%] md:mt-0 md:w-[42%]">
         <img
-          src="/images/hero.png"
+          src="/images/hero_1024px_NinaWeber_2.png"
           alt="Nina working at her desk, shot in an editorial film style"
           className="h-auto w-full object-cover"
         />

@@ -8,7 +8,7 @@ export function About() {
         <div className="order-1 md:order-2">
           <div className="overflow-hidden">
             <img
-                src="/images/about.png"
+                src="/images/about_1024px_NinaWeber_1.png"
                 alt="Close-up of hands typing on a laptop in an editorial film style"
                 className="h-auto w-full object-cover"
             />

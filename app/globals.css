@@ -148,4 +148,9 @@
     line-height: 0.9;
     letter-spacing: -0.02em;
   }
+
+  .image-overlay {
+    color: black;
+    opacity: 0.5;
+  }
 }

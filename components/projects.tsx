@@ -11,12 +11,16 @@ type Project = {
   liveURL: string;
 };
 
+function isVideoSource(src: string) {
+  return src.toLowerCase().endsWith(".mp4");
+}
+
 const PROJECTS: Project[] = [
   {
     index: "01",
     title: "Pocket Pets",
     year: "2024",
-    image: "/images/proj-pets.png",
+    image: "/images/proj-pocketpets_NinaWeber.png",
     description:
       "A cozy virtual-pet gaming app — care for your pets, play minigames and shop for treats, with weather, seasons and music. A four-week group project from my Web Development Bootcamp.",
     tags: ["React.js", "Next.js", "styled-components", "MongoDB", "Mongoose", "Vercel"],
@@ -27,7 +31,7 @@ const PROJECTS: Project[] = [
     index: "02",
     title: "Quiz App",
     year: "2023",
-    image: "/images/proj-quiz.png",
+    image: "/images/proj-quizapp_NinaWeber.png",
     description:
       "One of my first projects: answer, create and mark your own quiz questions. Built from scratch to learn the fundamentals.",
     tags: ["JavaScript", "HTML", "CSS"],
@@ -38,7 +42,7 @@ const PROJECTS: Project[] = [
     index: "03",
     title: "Calculator",
     year: "2023",
-    image: "/images/proj-calc.png",
+    image: "/images/proj-calc_NinaWeber_video.mp4",
     description:
       "A fully functional calculator with a modern, animated design. My playground for CSS animations and more complex JavaScript logic.",
     tags: ["JavaScript", "HTML", "CSS", "Vercel"],
@@ -49,7 +53,7 @@ const PROJECTS: Project[] = [
     index: "04",
     title: "Event Website",
     year: "2021",
-    image: "/images/proj-event.png",
+    image: "/images/proj-eventwebsite_NinaWeber.png",
     description:
       "My final journalism-school project: a mobile-first site to sell tickets, grow a newsletter and surface event details for online marketing traffic.",
     tags: ["WordPress", "Marketing", "Business Analysis", "Communication", "Design Thinking"],
@@ -60,7 +64,7 @@ const PROJECTS: Project[] = [
     index: "05",
     title: "CMS Websites & Blogs",
     year: "2014 — 2018",
-    image: "/images/proj-web.png",
+    image: "/images/proj-blogs_NinaWeber.png",
     description:
       "Years of building websites and blogs on WordPress and Squarespace — from a travel blog to an affiliate interior blog — always valuing aesthetics, navigation and UX.",
     tags: ["WordPress", "Squarespace", "UX Design", "Content Management"],
@@ -72,16 +76,31 @@ const PROJECTS: Project[] = [
 function ProjectRow({ project, flip }: { project: Project; flip: boolean }) {
   const repoURL = !!project.repoURL;
   const liveURL = !!project.liveURL;
+  const hasVideo = isVideoSource(project.image);
 
   return (
     <article className="group grid items-center gap-6 md:grid-cols-12 md:gap-8">
       <div className={flip ? "md:order-2 md:col-span-7" : "md:col-span-7"}>
         <div className="overflow-hidden">
-          <img
-            src={project.image || "/placeholder.svg"}
-            alt={`${project.title} project, editorial film style`}
-            className="h-auto w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-          />
+          {hasVideo ? (
+            <video
+              className="block h-auto w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label={`${project.title} project preview video`}
+            >
+              <source src={project.image} type="video/mp4" />
+            </video>
+          ) : (
+            <img
+              src={project.image || "/placeholder.svg"}
+              alt={`${project.title} project, editorial film style`}
+              className="h-auto w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+            />
+          )}
         </div>
       </div>
 
